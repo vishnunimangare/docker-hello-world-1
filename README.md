@@ -20,8 +20,8 @@ docker-hello-world/
 
 Using Docker Compose
 # Clone the repository
-git clone https://github.com/atulkamble/docker-hello-world.git
-cd docker-hello-world
+git clone https://github.com/vishnunimangare/docker-hello-world-1.git
+cd docker-hello-world-1
 
 # Run with Docker Compose
 docker compose up -d
@@ -30,10 +30,10 @@ docker compose up -d
 open http://localhost:80
 Using Docker directly
 # Build the image
-docker build -t atuljkamble/docker-hello-world:latest .
+docker build -t vishnunimangaredocker/docker-hello-world:latest .
 
 # Run the container
-docker run -d -p 80:80 atuljkamble/docker-hello-world:latest
+docker run -d -p 80:80 vishnunimangaredocker/docker-hello-world:latest
 Using Kubernetes
 # Apply Kubernetes manifests
 kubectl apply -f k8s/
@@ -46,8 +46,8 @@ kubectl get services
 🏗️ Build & Push to Docker Hub
 # Build multi-platform image
 docker buildx build --platform linux/amd64,linux/arm64 \
-  -t atuljkamble/docker-hello-world:latest \
-  -t atuljkamble/docker-hello-world:v1.0.0 \
+  -t vishnunimangaredocker/docker-hello-world:latest \
+  -t vishnunimangaredocker/docker-hello-world:v1.0.0 \
   --push .
 🧪 Testing
 # Test the running container
@@ -60,7 +60,7 @@ Base Image: nginx:alpine
 Content: Static HTML files in /html directory
 📦 Docker Image
 Registry: Docker Hub
-Repository: atuljkamble/docker-hello-world
+Repository: vishnunimangare/docker-hello-world-1
 Tags: latest, v1.0.0
 🚀 Deployment Options
 Local Development
