@@ -10,13 +10,14 @@ Multi-platform Docker image
 📁 Project Structure
 docker-hello-world/
 ├── Dockerfile
-├── html/index.html
 ├── docker-compose.yml
-├── k8s/
-│   ├── deployment.yaml
-│   └── service.yaml
-└── README.md
-🛠️ Quick Start
+├── README.md
+├── html
+│   └── index.html
+└── k8s
+    ├── deployment.yaml
+    └── service.yaml
+
 Using Docker Compose
 # Clone the repository
 git clone https://github.com/atulkamble/docker-hello-world.git
